@@ -15,7 +15,15 @@ class MyApp extends StatelessWidget {
       home:Scaffold(
         appBar: AppBar(
           title: Text("E-Shop"),
+          backgroundColor: Colors.green,
 
+        ),
+        body: ListView(
+          children:[
+            Text("Text 1"),
+            Text("Text 2"),
+            Text("Text 3"),
+          ]
         ),
       ),
     );
