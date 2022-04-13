@@ -1,3 +1,5 @@
+import 'package:e_shop/Screens/ScreenPadding.dart';
+import 'package:e_shop/Screens/Screen_Container.dart';
 import 'package:e_shop/Screens/text_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -71,7 +73,31 @@ class _HomeScreenState extends State<HomeScreen> {
                   subtitle: Text("Takes to another page"),
                   trailing: Text("Footer")
 
-              )
+              ),
+              ListTile(
+                  onTap: () => {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context)=>ScreenPadding()))
+                  },
+                  leading: Icon(Icons.add_link),
+                  title: Text("Padding Layout"),
+                  dense: true,
+                  subtitle: Text("Padding"),
+                  trailing: Text("Footer")
+
+              ),
+              ListTile(
+                  onTap: () => {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context)=>ScreenContainer()))
+                  },
+                  leading: Icon(Icons.add_link),
+                  title: Text("Container"),
+                  dense: true,
+                  subtitle: Text("Container"),
+                  trailing: Text("Footer")
+
+              ),
             ]
         ),
       ),

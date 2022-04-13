@@ -13,12 +13,12 @@ class TextScreen extends StatelessWidget {
       body: ListView(
         children: [
           ListTile(
-            title: Text("Simple Texts",
+            title: Text("Simple Texts 2.0",
               style: TextStyle(
                 fontSize: 30,
                 color: Colors.red.shade900,
                 fontWeight: FontWeight.bold,
-                backgroundColor: Colors.grey.shade200
+                backgroundColor: Colors.grey.shade200,
               ),
               textAlign: TextAlign.center,
             ),
